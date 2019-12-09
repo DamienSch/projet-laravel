@@ -18,5 +18,6 @@
 <body>
     @include('include/navBar')
     @yield('content')
+    @include('include/footer')
 </body>
 </html>

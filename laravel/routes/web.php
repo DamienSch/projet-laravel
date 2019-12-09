@@ -12,4 +12,12 @@
 */
 
 Route::get('/', 'DescriptionController@index');
-Route::get('/page2', 'DescriptionController@page2');
+Route::get('/homme', 'DescriptionController@pageHomme');
+Route::get('/femme', 'DescriptionController@pageFemme');
+Route::get('/soldes', 'DescriptionController@pageSoldes');
+Route::get('/mentions-legales', 'DescriptionController@pageMentionsLegales');
+Route::get('/presse', 'DescriptionController@pagePresse');
+Route::get('/fabrication', 'DescriptionController@pageFabrication');
+Route::get('/contact', 'DescriptionController@pageContact');
+Route::get('/livraison', 'DescriptionController@pageLivraison');
+Route::get('/conditions-de-vente', 'DescriptionController@pageConditionsDeVente');

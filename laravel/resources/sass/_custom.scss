@@ -1,0 +1,33 @@
+// colors
+:root {
+    --font-color: #66EB9A;
+    --background-color: #343a40;
+}
+// navbar
+.navbar {
+    a.logoNav {
+        color: var(--font-color);
+    }
+    a.logoNav:hover {
+        opacity: 0.8;
+    }
+    a.logoNav:visited {
+        color: var(--font-color);
+    }
+}
+// jumbotron
+div.jumbotron {
+    margin: 0 auto;
+}
+// footer
+.page-footer {
+    background: var(--background-color);
+    .container {
+        a.footerTitle {
+            color: var(--font-color);
+        }
+        a.footerTitle:hover {
+            opacity: 0.8;
+        }
+    }
+}

@@ -1,2 +1,33 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap);:root {
+  --font-color: #66EB9A;
+  --background-color: #343a40;
+}
+
+.navbar a.logoNav {
+  color: var(--font-color);
+}
+
+.navbar a.logoNav:hover {
+  opacity: 0.8;
+}
+
+.navbar a.logoNav:visited {
+  color: var(--font-color);
+}
+
+div.jumbotron {
+  margin: 0 auto;
+}
+
+.page-footer {
+  background: var(--background-color);
+}
+
+.page-footer .container a.footerTitle {
+  color: var(--font-color);
+}
+
+.page-footer .container a.footerTitle:hover {
+  opacity: 0.8;
+}
 
