@@ -1,3 +1,4 @@
+
 // colors
 :root {
     --font-color: #66EB9A;
@@ -19,6 +20,21 @@
 div.jumbotron {
     margin: 0 auto;
 }
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+a.fa:hover {
+    opacity: 0.7;
+}
+
+
 // footer
 .page-footer {
     background: var(--background-color);

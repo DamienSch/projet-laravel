@@ -75,14 +75,11 @@
         </div>
         <!-- Grid row-->
         <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
     </div>
     <!-- Footer Links -->
-
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2019 Copyright: Damien Schaller
     </div>
     <!-- Copyright -->
-
 </footer>
 <!-- Footer -->
