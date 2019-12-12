@@ -9,13 +9,13 @@
                 <a class="nav-link" href="/">Accueil <span class="sr-only">Accueil</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/homme">Homme</a>
+                <a class="nav-link" href="/category/1">Homme</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/femme">Femme</a>
+                <a class="nav-link" href="/category/2">Femme</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/soldes">Soldes</a>
+                <a class="nav-link" href="/soldes/1">Soldes</a>
             </li>
         </ul>
     </div>

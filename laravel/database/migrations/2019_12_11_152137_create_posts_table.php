@@ -18,16 +18,15 @@ class CreatePostsTable extends Migration
             $table->unsignedInteger('picture_id')->nullable();
             $table->unsignedInteger('category_id')->nullable();
             $table->string('title');
-            $table->set('sizes', ['XS', 'S', 'M', 'L', 'XL'])->nullable();
+            $table->set('sizes', ['XS','S','M','L','XL','XXL'])->nullable();
             $table->mediumText('description');
             $table->string('price');
             $table->boolean('soldes');
             $table->boolean('visibility');
             $table->string('keyProduct', 16)->unique()->nullable();
             $table->foreign('category_id')->references('id')->on('category');
-            $table->foreign('picture_id')->references('id')->on('picture')->onDelete('cascade');
+            $table->foreign('picture_id')->references('id')->on('pictures')->onDelete('cascade');
             $table->timestamps();
-
         });
     }
 
@@ -38,10 +37,8 @@ class CreatePostsTable extends Migration
      */
     public function down()
     {
-
         DB::statement('SET FOREIGN_KEY_CHECKS = 0');
         Schema::dropIfExists('posts');
         DB::statement('SET FOREIGN_KEY_CHECKS = 1');
-
     }
 }

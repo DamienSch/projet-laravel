@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Posts;
+use App\Picture;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
 class PostController extends Controller
 {
@@ -11,11 +15,30 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index()
     {
-        //
+        $contents = file_get_contents('../resources/img/defaultImage.jpg');
+        Storage::disk('local')->put('defaultImage.jpg', $contents);
+        $posts = DB::table('posts')->leftjoin('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->orderBy('posts.id', 'desc')->paginate(6);
+        return view('posts.index')->with('posts',$posts);
     }
 
+    public function category($genre){
+        $posts = DB::table('posts')->leftJoin('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->where('category_id', $genre)->orderBy('posts.id', 'desc')->paginate(6);
+        return view('posts.index')->with('posts',$posts);
+    }
+
+    public function soldes($soldes){
+        $posts = DB::table('posts')->leftJoin('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->where('soldes', $soldes)->orderBy('posts.id', 'desc')->paginate(6);
+        return view('posts.index')->with('posts',$posts);
+    }
+
+    /*public function publish()
+    {
+        $products = Product::where('published', true)->paginate($this->paginate);
+        return view('front.product-list', ['products' => $products]);
+    }*/
     /**
      * Show the form for creating a new resource.
      *
@@ -45,7 +68,11 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Posts::find($id);
+        $picture = Picture::find($post->picture_id);
+        //$post = DB::table('posts')->join('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->where('posts.id', '=',$id);
+        $sizes = explode(',', $post->sizes);
+        return view('posts.show', ['post' => $post, 'sizes' => $sizes, 'picture' => $picture]);
     }
 
     /**
@@ -56,7 +83,7 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**

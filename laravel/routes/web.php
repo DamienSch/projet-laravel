@@ -11,13 +11,16 @@
 |
 */
 
-Route::get('/', 'DescriptionController@index');
-Route::get('/homme', 'DescriptionController@pageHomme');
-Route::get('/femme', 'DescriptionController@pageFemme');
-Route::get('/soldes', 'DescriptionController@pageSoldes');
+Route::get('/', 'PostController@index');
+Route::get('/category/{id}', 'PostController@category' , function ($id) {})->name('category_id');
+Route::get('/soldes/{id}', 'PostController@soldes' , function ($id) {})->name('category_id');
 Route::get('/mentions-legales', 'DescriptionController@pageMentionsLegales');
 Route::get('/presse', 'DescriptionController@pagePresse');
 Route::get('/fabrication', 'DescriptionController@pageFabrication');
 Route::get('/contact', 'DescriptionController@pageContact');
 Route::get('/livraison', 'DescriptionController@pageLivraison');
 Route::get('/conditions-de-vente', 'DescriptionController@pageConditionsDeVente');
+Route::get('/posts', 'PostController@index');
+Route::resource('/produit', 'PostController');
+
+
