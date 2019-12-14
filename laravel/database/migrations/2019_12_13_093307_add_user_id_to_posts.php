@@ -11,6 +11,8 @@ class AddUserIdToPosts extends Migration
      *
      * @return void
      */
+
+    /* Each user data */
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {

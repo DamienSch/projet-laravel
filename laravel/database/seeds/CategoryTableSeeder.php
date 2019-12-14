@@ -11,6 +11,8 @@ class CategoryTableSeeder extends Seeder
      * @return void
      */
     private $table = 'category';
+
+    /* Generate category data */
     public function run()
     {
         DB::table($this->table)->insert([

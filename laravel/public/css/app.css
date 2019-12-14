@@ -11362,6 +11362,16 @@ a.text-dark:focus {
   --background-color: #343a40;
 }
 
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--normal-font-color);
+}
+
 .navbar a.logoNav {
   color: var(--font-color);
 }
@@ -11372,23 +11382,6 @@ a.text-dark:focus {
 
 .navbar a.logoNav:visited {
   color: var(--font-color);
-}
-
-div.jumbotron {
-  margin: 0 auto;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
-
-a.fa:hover {
-  opacity: 0.7;
 }
 
 .allPostsContainer {
@@ -11437,15 +11430,38 @@ a.fa:hover {
   margin: 10px 0;
 }
 
-.page-footer {
-  background: var(--background-color);
-}
-
 .page-footer .container a.footerTitle {
   color: var(--font-color);
 }
 
 .page-footer .container a.footerTitle:hover {
   opacity: 0.8;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
 }
 

@@ -11,6 +11,8 @@ class PicturesTableSeeder extends Seeder
      * @return void
      */
     private $table = 'pictures';
+
+    /* Generate pictures data */
     public function run()
     {
         DB::table($this->table)->insert([

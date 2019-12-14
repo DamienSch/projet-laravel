@@ -9,6 +9,8 @@ class PostsTableSeeder extends Seeder
      *
      * @return void
      */
+
+    /* Generate Posts data */
     public function run()
     {
         factory(App\Posts::class, 80)->create();

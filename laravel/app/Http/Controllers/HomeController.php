@@ -14,6 +14,8 @@ class HomeController extends Controller
      *
      * @return void
      */
+
+    /* authentification */
     public function __construct()
     {
         $this->middleware('auth');
@@ -24,6 +26,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+    /* All posts */
     public function index()
     {
         $posts = DB::table('posts')->orderBy('posts.id', 'desc')->paginate(6);

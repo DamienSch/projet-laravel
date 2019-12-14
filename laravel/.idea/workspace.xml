@@ -2,8 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="451f437a-c80e-48b1-b6af-2cbcd5445ede" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DescriptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostsFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_10_080324_create_category_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_10_080324_create_category_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_11_152125_create_pictures_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_11_152125_create_pictures_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_11_152137_create_posts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_11_152137_create_posts_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_13_093307_add_user_id_to_posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_12_13_093307_add_user_id_to_posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CategoryTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PicturesTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PicturesTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about/pageFemme.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about/pageHomme.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about/pageSoldes.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/include/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/include/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/include/navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/include/navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,14 +268,14 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="319" y="222" key="com.intellij.ide.util.TipDialog/0.23.1280.733@0.23.1280.733" timestamp="1575812149188" />
-    <state x="306" y="33" width="816" height="714" key="find.popup" timestamp="1576160220900">
+    <state x="306" y="33" width="816" height="714" key="find.popup" timestamp="1576354115726">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
-    <state x="306" y="33" width="816" height="714" key="find.popup/0.23.1280.734@0.23.1280.734" timestamp="1576160220900" />
-    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup" timestamp="1576156285381">
+    <state x="306" y="33" width="816" height="714" key="find.popup/0.23.1280.734@0.23.1280.734" timestamp="1576354115726" />
+    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup" timestamp="1576354374068">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state x="305" y="80" width="670" height="676" key="search.everywhere.popup/0.23.1280.733@0.23.1280.733" timestamp="1575911816208" />
-    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup/0.23.1280.734@0.23.1280.734" timestamp="1576156285381" />
+    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup/0.23.1280.734@0.23.1280.734" timestamp="1576354374068" />
   </component>
 </project>

@@ -6,6 +6,7 @@ use App\Posts;
 use Faker\Generator as Faker;
 $text = config('sizes');
 
+/* Fake data posts */
 $factory->define(App\Posts::class, function (Faker $faker) {
     return [
         'title' => $faker->sentence(),

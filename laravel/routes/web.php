@@ -25,8 +25,6 @@ Route::get('/posts', 'PostController@index');
 Route::get('/create', 'PostController@create');
 Route::resource('/produit', 'PostController');
 
-
-
+/* Authentification */
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('home');

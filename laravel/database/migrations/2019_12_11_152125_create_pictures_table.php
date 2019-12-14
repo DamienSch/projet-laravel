@@ -11,6 +11,8 @@ class CreatePicturesTable extends Migration
      *
      * @return void
      */
+
+    /* Pictures data */
     public function up()
     {
         Schema::create('pictures', function (Blueprint $table) {

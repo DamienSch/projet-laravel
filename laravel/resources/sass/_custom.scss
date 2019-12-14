@@ -5,6 +5,18 @@
     --normal-font-color: #343a40;
     --background-color: #343a40;
 }
+// global
+li {
+    list-style: none;
+
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--normal-font-color);
+}
+
 // navbar
 .navbar {
     a.logoNav {
@@ -16,24 +28,6 @@
     a.logoNav:visited {
         color: var(--font-color);
     }
-}
-
-// jumbotron
-div.jumbotron {
-    margin: 0 auto;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-
-a.fa:hover {
-    opacity: 0.7;
 }
 
 // posts
@@ -56,8 +50,8 @@ a.fa:hover {
             text-decoration: none;
             color: var(--normal-font-color);
         }.postLink:hover {
-            color: var(--font-color);
-        }
+             color: var(--font-color);
+         }
         .postImage {
             width: 50%;
         }
@@ -66,9 +60,9 @@ a.fa:hover {
         }
     }
 }
+
 // footer
 .page-footer {
-    background: var(--background-color);
     .container {
         a.footerTitle {
             color: var(--font-color);
@@ -77,4 +71,35 @@ a.fa:hover {
             opacity: 0.8;
         }
     }
+}
+
+// footer icones
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+// Facebook
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+// Instragram
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+// Google
+.fa-google {
+    background: #dd4b39;
+    color: white;
 }

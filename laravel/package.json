@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "bootstrap-social": "^5.1.1",
+        "bourbon": "^6.0.0",
         "jquery": "^3.4.1",
         "mdbootstrap": "^4.10.1",
         "popper.js": "^1.16.0"

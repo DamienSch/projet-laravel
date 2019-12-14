@@ -5,7 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Dashboard</div>
+                    <div class="card-header">Tableau de bord</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -21,8 +21,8 @@
                             <div class="allPostsContainer">
                                 <ul>
                                     @foreach($posts as $post)
-                                        <li>
-                                            <p><a class="postLink" href="/produit/{{$post->id}}">{{$post->title}}</a></p>
+                                        <li class="col-12 mb-4 mt-4">
+                                            <h4><a class="postLink" href="/produit/{{$post->id}}">{{$post->title}}</a></h4>
                                             <p>Catégorie :
                                                 @if($post->category_id == 1)
                                                     Homme
@@ -32,22 +32,22 @@
                                                 @endif
                                             </p>
                                             <p>Prix : {{$post->price}}</p>
-                                            <p>
-                                                @if($post->category_id == 1)
-                                                    Visible
+                                            <p>Ce produit est
+                                                @if($post->visibility == 1)
+                                                    visible
                                                 @endif
-                                                @if($post->category_id == 2)
-                                                    Caché
+                                                @if($post->visibility == 0)
+                                                    caché
                                                 @endif
                                             </p>
                                         </li>
-                                            <div class="container">
-                                                <a class="btn btn-lg btn-dark col-12" href="/produit/{{$post->id}}/edit">Editer ce produit</a>
-                                                {!! Form::open(['action' => ['PostController@destroy', $post->id], 'method' => 'post']) !!}
-                                                {!! Form::hidden('_method', 'DELETE', ['id' => 'id']) !!}
-                                                {!! Form::submit('Supprimer', ['class' => 'form-control btn btn-lg btn-dark', 'style' => 'margin-top:10px']) !!}
-                                                {!! Form::close() !!}
-                                            </div>
+                                        <div class="container mb-5">
+                                            <a class="btn btn-lg btn-dark col-12" href="/produit/{{$post->id}}/edit">Editer ce produit</a>
+                                            {!! Form::open(['action' => ['PostController@destroy', $post->id], 'method' => 'post']) !!}
+                                            {!! Form::hidden('_method', 'DELETE', ['id' => 'id']) !!}
+                                            {!! Form::submit('Supprimer', ['class' => 'form-control btn btn-lg btn-dark', 'style' => 'margin-top:10px']) !!}
+                                            {!! Form::close() !!}
+                                        </div>
                                         <hr>
                                     @endforeach
                                 </ul>

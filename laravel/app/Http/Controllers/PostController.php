@@ -17,10 +17,11 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+    /* Guest access pages */
     public function __construct() {
         $this->middleware('auth', ['except' => ['index','show','category','soldes']]);
     }
-
+    /* Show all posts */
     public function index()
     {
         $contents = file_get_contents('../resources/img/defaultImage.jpg');
@@ -28,27 +29,24 @@ class PostController extends Controller
         $posts = DB::table('posts')->where('visibility', '>=', 1)->leftjoin('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->orderBy('posts.id', 'desc')->paginate(6);
         return view('posts.index')->with('posts',$posts);
     }
-
+    /* Show men and women posts */
     public function category($genre){
         $posts = DB::table('posts')->where('visibility', '>=', 1)->leftJoin('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->where('category_id', $genre)->orderBy('posts.id', 'desc')->paginate(6);
         return view('posts.index')->with('posts',$posts);
     }
-
+    /* Show soldes posts */
     public function soldes($soldes){
         $posts = DB::table('posts')->where('visibility', '>=', 1)->leftJoin('pictures', 'posts.picture_id', '=', 'pictures.id')->select(['posts.*','pictures.link','pictures.name'])->where('soldes', $soldes)->orderBy('posts.id', 'desc')->paginate(6);
         return view('posts.index')->with('posts',$posts);
     }
 
-    /*public function publish()
-    {
-        $products = Product::where('published', true)->paginate($this->paginate);
-        return view('front.product-list', ['products' => $products]);
-    }*/
     /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
      */
+
+    /* Create posts */
     public function create()
     {
         return view('posts.create');
@@ -60,30 +58,28 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    /* store posts */
     public function store(Request $request)
     {
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
-            /*'category_id' => 'required',*/
+            'category_id' => 'required',
             'price' => 'required',
             'size' => 'required',
-            /*'link' => 'required',*/
         ]);
         $post = new Posts;
-        /*$pictures = Picture::find($id);*/
-        /*$category = Category::find($id);*/
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->price = $request->input('price');
         $post->sizes = $request->input('size');
-        /*$pictures->link = $request->input('link');*/
         $post->category_id = $request->input('category_id');
         $post->keyProduct = $request->input('keyProduct');
         $post->visibility = $request->input('visibility');
         $post->soldes = $request->input('soldes');
         $post->save();
-        return redirect('/home')->with('success', 'Votre produit à été créer');
+        return redirect('/admin')->with('success', 'Votre produit à été créer');
     }
 
     /**
@@ -92,6 +88,8 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    /* Show posts */
     public function show($id)
     {
         $post = Posts::find($id);
@@ -106,6 +104,8 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    /* Edit posts */
     public function edit($id)
     {
         $post = Posts::find($id);
@@ -121,31 +121,28 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    /* Update posts */
     public function update(Request $request, $id)
     {
 
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
-            /*'category_id' => 'required',*/
             'price' => 'required',
             'size' => 'required',
-            /*'link' => 'required',*/
         ]);
         $post = Posts::find($id);
-        /*$pictures = Picture::find($id);*/
-        /*$category = Category::find($id);*/
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->price = $request->input('price');
         $post->sizes = $request->input('size');
-        /*$pictures->link = $request->input('link');*/
         $post->category_id = $request->input('category_id');
         $post->keyProduct = $request->input('keyProduct');
         $post->visibility = $request->input('visibility');
         $post->soldes = $request->input('soldes');
         $post->save();
-        return redirect('/home')->with('success', 'Votre produit à été modifier');
+        return redirect('/admin')->with('success', 'Votre produit à été modifier');
     }
 
     /**
@@ -154,11 +151,13 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    /* Delete posts */
     public function destroy($id)
     {
         $post = Posts::find($id);
         $post->delete();
-        return redirect('/home')->with('success', 'Votre produit à bien été supprimé');
+        return redirect('/admin')->with('success', 'Votre produit à bien été supprimé');
 
     }
 }
