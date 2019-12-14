@@ -18,6 +18,7 @@
 </head>
 <body>
     @include('include/navBar')
+    @include('errors/errors')
     @yield('content')
     @include('include/footer')
 </body>

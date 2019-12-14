@@ -16,11 +16,11 @@
                 <p>{{$post->description}}</p>
             </div>
         @endforeach
-            <!-- Pagination -->
-            <div class="row">
-                <div class="col-12 text-center pt-4">
-                    {{$posts->links()}}
-                </div>
+        </div>
+        <!-- Pagination -->
+        <div class="col-12">
+        <div class="mx-auto pagination container col-3">
+                {{$posts->links()}}
             </div>
         </div>
         @else

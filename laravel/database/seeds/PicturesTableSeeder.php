@@ -14,7 +14,7 @@ class PicturesTableSeeder extends Seeder
     public function run()
     {
         DB::table($this->table)->insert([
-            'link' => 'resources/img/0693445251_1_1_1.jpg',
+            'link' => 'defaultImage.jpg',
             'name' => 'MyImagTitle',
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
