@@ -52,7 +52,7 @@
                                     @endforeach
                                 </ul>
                                 <!-- Pagination -->
-                                <div class="row">
+                                <div class="column">
                                     <div class="col-12 text-center pt-4">
                                         {{$posts->links()}}
                                     </div>

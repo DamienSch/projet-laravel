@@ -6,12 +6,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Posts extends Model
 {
+    protected $table = 'posts';
     protected $fillable = [
         'title',
         'description',
+        'picture_id',
         'category_id',
+        'keyProduct',
         'price',
-        'size'
+        'soldes',
+        'visibility',
+        'sizes'
     ];
 
     public function picture() {

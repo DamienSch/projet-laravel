@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="allPostsContainer">
-    {!! Form::open(['action' => ['PostController@update', $post->id], 'method' => 'POST']) !!}
+    {!! Form::open(['action' => ['PostController@update', $post->id],'enctype' => 'multipart/form-data', 'method' => 'POST']) !!}
     <!--title-->
         <div class="form-group">
             {!! Form::label('title', 'Titre', ['class' => 'control-label']) !!}
@@ -20,9 +20,9 @@
             {!! Form::select('category_id', ['1' => 'Homme', '2' => 'Femme']) !!}
         </div>
         <!--size-->
-        <div class="form-group">
-            {!! Form::label('size', 'Taille', ['class' => 'control-label']) !!}
-            {!! Form::select('size',['XS' => 'Extra Small', 'S' => 'Small','M' => 'Medium','L' => 'Large', 'XL' => 'Extra Large']) !!}
+        <div class="form-group" >
+            {!! Form::label('sizes', 'Taille', ['class' => 'control-label']) !!}
+            {!! Form::select('sizes',['XS' => 'Extra Small', 'S' => 'Small','M' => 'Medium','L' => 'Large', 'XL' => 'Extra Large']) !!}
         </div>
         <!--price-->
         <div class="form-group">
@@ -31,20 +31,21 @@
         </div>
         <!--picture-->
         <div class="form-group">
-            {!! Form::label('link', 'Image du produit', ['class' => 'control-label']) !!}
-            {!! Form::file('link'); !!}
+            <label for="genre">Title image :</label>
+            <input type="text" name="title_image" value="{{old('value')}}">
+            <input class="file" type="file" name="picture" value="{{old('value')}}">
         </div>
-        {{--serial number--}}
+        <!--serial number-->
         <div class="form-group">
             {!! Form::label('keyProduct', 'Numéro de Produit', ['class' => 'control-label']) !!}
             {!! Form::text('keyProduct', $post->keyProduct, ['class' => 'form-control', 'placeholder' => 'Facultatif ...']) !!}
         </div>
-        {{--publish item--}}
+        <!--publish item-->
         <div class="form-group">
             {!! Form::label('visibility', 'visibilité', ['class' => 'control-label']) !!}
             {!! Form::select('visibility', ['1' => 'Visible', '0' => 'Caché']) !!}
         </div>
-        {{--solde product--}}
+        <!--soldes product-->
         <div class="form-group">
             {!! Form::label('soldes', 'Soldes', ['class' => 'control-label']) !!}
             {!! Form::select('soldes', ['1' => 'En soldes', '0' => 'Pas en soldes']) !!}

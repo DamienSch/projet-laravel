@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="allPostsContainer">
-    {!! Form::open(['action' => 'PostController@store', 'method' => 'post']) !!}
+    {!! Form::open(['action' => 'PostController@store', 'method' => 'post', 'enctype' => 'multipart/form-data']) !!}
     <!--title-->
         <div class="form-group">
             {!! Form::label('title', 'Titre', ['class' => 'control-label']) !!}
@@ -21,13 +21,19 @@
         </div>
         <!--size-->
         <div class="form-group">
-            {!! Form::label('size', 'Taille', ['class' => 'control-label']) !!}
-            {!! Form::select('size', ['XS' => 'Extra Small', 'S' => 'Small','M' => 'Medium','L' => 'Large', 'XL' => 'Extra Large']) !!}
+            {!! Form::label('sizes', 'Taille', ['class' => 'control-label']) !!}
+            {!! Form::select('sizes', ['XS' => 'Extra Small', 'S' => 'Small','M' => 'Medium','L' => 'Large', 'XL' => 'Extra Large']) !!}
         </div>
         <!--price-->
         <div class="form-group">
             {!! Form::label('price', 'Prix', ['class' => 'control-label']) !!}
             {!! Form::number('price', 'value'); !!}
+        </div>
+        <!--picture-->
+        <div class="form-group">
+            <label id="picture" name="picture" for="genre">Title image :</label>
+           {{-- <input type="text" name="name" value="{{old('name')}}">--}}
+            <input id="picture" class="file" type="file" name="picture" >
         </div>
         {{--serial number--}}
         <div class="form-group">

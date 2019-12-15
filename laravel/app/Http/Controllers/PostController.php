@@ -67,13 +67,21 @@ class PostController extends Controller
             'description' => 'required',
             'category_id' => 'required',
             'price' => 'required',
-            'size' => 'required',
+            'sizes' => 'required',
+            'picture' => 'required',
         ]);
+        $link = $request->file('picture')->store('');
         $post = new Posts;
+
+        $picture = $post->picture()->create([
+            'link' => $link,
+            'name' => $request->name,
+        ]);
+        $post->picture_id = $picture->id; // todo error model with posts delete s
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->price = $request->input('price');
-        $post->sizes = $request->input('size');
+        $post->sizes = $request->input('sizes');
         $post->category_id = $request->input('category_id');
         $post->keyProduct = $request->input('keyProduct');
         $post->visibility = $request->input('visibility');
@@ -125,18 +133,27 @@ class PostController extends Controller
     /* Update posts */
     public function update(Request $request, $id)
     {
-
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
+            'category_id' => 'required',
             'price' => 'required',
-            'size' => 'required',
+            'sizes' => 'required',
+            'picture' => 'required',
         ]);
-        $post = Posts::find($id);
+        /*$post = Posts::create($request->all());*/
+        $link = $request->file('picture')->store('');
+        $post = new Posts;
+
+        $picture = $post->picture()->create([
+            'link' => $link,
+            'name' => $request->name,
+        ]);
+        $post->picture_id = $picture->id; // todo error model with posts delete s
         $post->title = $request->input('title');
         $post->description = $request->input('description');
         $post->price = $request->input('price');
-        $post->sizes = $request->input('size');
+        $post->sizes = $request->input('sizes');
         $post->category_id = $request->input('category_id');
         $post->keyProduct = $request->input('keyProduct');
         $post->visibility = $request->input('visibility');
