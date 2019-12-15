@@ -141,7 +141,6 @@ class PostController extends Controller
             'sizes' => 'required',
             'picture' => 'required',
         ]);
-        /*$post = Posts::create($request->all());*/
         $link = $request->file('picture')->store('');
         $post = new Posts;
 
