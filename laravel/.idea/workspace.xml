@@ -4,11 +4,8 @@
     <list default="true" id="451f437a-c80e-48b1-b6af-2cbcd5445ede" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Picture.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Picture.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/include/navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/include/navBar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +156,7 @@
       <recent name="$PROJECT_DIR$/resources/views/about" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/storage/app/resources/img" />
       <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/resources/img" />
     </key>
@@ -228,10 +226,10 @@
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state x="110" y="143" width="1060" height="493" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.23.1280.734@0.23.1280.734" timestamp="1576335747172" />
-    <state x="110" y="143" width="1060" height="493" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576335295193">
+    <state x="11" y="35" width="1258" height="710" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1576483307904">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
-    <state x="110" y="143" width="1060" height="493" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.734@0.23.1280.734" timestamp="1576335295193" />
+    <state x="11" y="35" width="1258" height="710" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1280.734@0.23.1280.734" timestamp="1576483307904" />
     <state x="319" y="222" key="com.intellij.ide.util.TipDialog" timestamp="1575812149188">
       <screen x="0" y="23" width="1280" height="733" />
     </state>
@@ -240,10 +238,10 @@
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state x="306" y="33" width="816" height="714" key="find.popup/0.23.1280.734@0.23.1280.734" timestamp="1576422579598" />
-    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup" timestamp="1576425878819">
+    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup" timestamp="1576426583708">
       <screen x="0" y="23" width="1280" height="734" />
     </state>
     <state x="305" y="80" width="670" height="676" key="search.everywhere.popup/0.23.1280.733@0.23.1280.733" timestamp="1575911816208" />
-    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup/0.23.1280.734@0.23.1280.734" timestamp="1576425878819" />
+    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup/0.23.1280.734@0.23.1280.734" timestamp="1576426583708" />
   </component>
 </project>

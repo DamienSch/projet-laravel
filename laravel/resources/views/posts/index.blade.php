@@ -19,7 +19,7 @@
         </div>
         <!-- Pagination -->
         <div class="col-12">
-            <div class="mx-auto pagination container col-3">
+            <div class="mx-auto d-flex pagination container justify-content-center">
                 {{$posts->links()}}
             </div>
         </div>

@@ -142,7 +142,7 @@ class PostController extends Controller
             'picture' => 'required',
         ]);
         $link = $request->file('picture')->store('');
-        $post = new Posts;
+        $post = Posts::find($id);
 
         $picture = $post->picture()->create([
             'link' => $link,

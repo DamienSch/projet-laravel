@@ -23,11 +23,12 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex flex-row-reverse collapse navbar-collapse" id="navbarSupportedContent">
+            @auth
             <!-- Left Side Of Navbar -->
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
+            <a class="navbar-nav mr-auto" href="/admin" style="height: 30px;width: 30px;background: lightgray;border-radius: 20px">
+            </a>
+            @endauth
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
