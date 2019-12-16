@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="451f437a-c80e-48b1-b6af-2cbcd5445ede" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_12_13_093307_add_user_id_to_posts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/include/navBar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/include/navBar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/posts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +153,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/resources/views/about" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/storage/app/resources/img" />
       <recent name="$PROJECT_DIR$/storage/app/public" />
       <recent name="$PROJECT_DIR$/resources/img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/about" />
     </key>
   </component>
   <component name="RunManager">
@@ -234,14 +235,16 @@
       <screen x="0" y="23" width="1280" height="733" />
     </state>
     <state x="319" y="222" key="com.intellij.ide.util.TipDialog/0.23.1280.733@0.23.1280.733" timestamp="1575812149188" />
-    <state x="306" y="33" width="816" height="714" key="find.popup" timestamp="1576422579598">
-      <screen x="0" y="23" width="1280" height="734" />
+    <state x="306" y="33" width="816" height="715" key="find.popup" timestamp="1576531759087">
+      <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="306" y="33" width="816" height="714" key="find.popup/0.23.1280.734@0.23.1280.734" timestamp="1576422579598" />
-    <state x="305" y="80" width="670" height="677" key="search.everywhere.popup" timestamp="1576426583708">
-      <screen x="0" y="23" width="1280" height="734" />
+    <state x="306" y="33" width="816" height="715" key="find.popup/0.23.1280.735@0.23.1280.735" timestamp="1576531759087" />
+    <state x="305" y="80" width="670" height="678" key="search.everywhere.popup" timestamp="1576532153915">
+      <screen x="0" y="23" width="1280" height="735" />
     </state>
     <state x="305" y="80" width="670" height="676" key="search.everywhere.popup/0.23.1280.733@0.23.1280.733" timestamp="1575911816208" />
     <state x="305" y="80" width="670" height="677" key="search.everywhere.popup/0.23.1280.734@0.23.1280.734" timestamp="1576426583708" />
+    <state x="305" y="80" width="670" height="678" key="search.everywhere.popup/0.23.1280.735@0.23.1280.735" timestamp="1576532153915" />
   </component>
 </project>
